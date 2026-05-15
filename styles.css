@@ -342,6 +342,25 @@ a { color: inherit; text-decoration: none; }
   .section__rule { display: none; }
 }
 
+.section__sub {
+  margin: -16px 0 36px 104px;
+  font-style: italic;
+  color: var(--ink-mute);
+  font-size: 16px;
+  max-width: 60ch;
+}
+@media (max-width: 720px) {
+  .section__sub { margin-left: 0; }
+}
+
+.inline-link {
+  color: var(--accent);
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  font-style: normal;
+  transition: border-color 0.2s ease;
+}
+.inline-link:hover { border-bottom-color: var(--accent); }
+
 /* ============== ABSTRACT ============== */
 .section--abstract { padding-top: clamp(48px, 6vw, 80px); }
 .abstract {
